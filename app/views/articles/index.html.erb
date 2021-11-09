@@ -1,0 +1,6 @@
+<ul class='list-unstyled'>
+  <% @articles.each do |article| %>
+    <li> <%= link_to article.title, article_path(article) %> <br> <%= article.description %> <br> </li><br>
+  <% end %>
+</ul>
+<p><%= link_to 'Add a new article', new_article_path %></p>

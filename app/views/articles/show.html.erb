@@ -1,0 +1,8 @@
+<h2><%= @article.title %></h2>
+<p><%= @article.description %></p>
+<p><%= link_to 'Edit article', edit_article_path %></p>
+<p><%= link_to "Delete article",
+            task_path(@task),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %></p>
+<p><%= link_to 'See all your articles', article_path %></p>
